@@ -8,17 +8,19 @@ public class P14_1110 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int cnt = 0;
         int N = Integer.parseInt(br.readLine());
+        int result = N;
         while (true){
 
-            int L = N / 10;
-            int R = N % 10;
+            int L = result / 10;
+            int R = result % 10;
 
-            int result = R*10 +(L+R) % 10;
+            result = R*10 + ((L+R) % 10);
             cnt ++;
             if (result == N) {
                 break;
             }
-            System.out.println(cnt);
+
         }
+    System.out.println(cnt);
     }
 }
