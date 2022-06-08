@@ -16,10 +16,12 @@ public class P7_2908 {
         String RA = "";
         String RB = "";
 
-        for (int i = 2; i > -1; i++) {
+        for (int i = 2; i > -1; i--) {
             RA += A.charAt(i);
             RB += B.charAt(i);
         }
-        System.out.println(RA);
+        int AA = Integer.parseInt(RA);
+        int BB = Integer.parseInt(RB);
+        System.out.println(Math.max(AA,BB));
     }
 }
